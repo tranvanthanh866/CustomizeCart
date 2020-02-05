@@ -1,0 +1,29 @@
+{
+    "name": "packages/shoppingcart",
+    "description": "customize by Thanh VNIT",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thanh VNIT",
+            "email": "tranvanthanh.vnit@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "darryldecode/cart": "~4.1"
+    },
+	"autoload": {
+        "psr-4": {
+            "Packages\\ShoppingCart\\": "src/"
+        }
+    },
+	"extra": {
+        "laravel": {
+            "providers": [
+                "Packages\\ShoppingCart\\Providers\\ShoppingCartServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    }
+}
